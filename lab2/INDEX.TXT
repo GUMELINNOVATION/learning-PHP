@@ -1,0 +1,52 @@
+<!-- Q1.
+For this PHP exercise, write a script using the following variables:
+$x=80;
+$y=20;
+ 
+Use separated print statements to calculate and print the following statements :
+
+The multiplication of 80 and 20 is 1600.
+The division of 80 by 20 results 4.
+The remainder of 80 after the divison by 20 is 0.
+When 20 reduced from 80 the result is 60.
+When we add 80 by 20 the result is 100.
+
+ps. When you change the value of variables $x and $ y the output must be dynamically changed. As a hint use variables while preparing the output. -->
+
+<!-- 
+Q2.  
+Write a script that will visit each character of a string and 
+concatenate the characters of the string to form a word  backward.
+ At the end, your script must display:
+
+ Yes, a palindrome
+    Or
+No, your word is not a palindrome.
+
+Palindrome: is a word or sentence that reads the same forward as 
+it does backward. Example civic, radar, rotor.
+ps. use strlen to find the length of a string.
+Restriction: Can not use strrev() function. -->
+
+
+<!-- 
+Q3.
+For this PHP exercise, write a script using the following variables:
+$x=2;
+$exp=20;
+
+The script will display the power of $x starting from 0 up to $exp using the format below:
+
+The power of 2s
+20=1
+21=2
+22=4
+23=8
+24=16
+...
+...
+...
+220=1048576
+
+ps. When you change the value of variables $x and $exp the
+ output must be dynamically changed.pow($base,$exponent) function could be used. -->
