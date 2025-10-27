@@ -7,8 +7,17 @@
     <title>lab 3 itec327</title>
 </head>
 <body class="p-6 space-y-2 bg-blue-100 m-3" >
-    
-
+  <input type= "color" id="head"
+  oninput="document.body.style.backgroundColor = this.value"> 
+<input
+  type="range"
+  min="0"
+  max="100"
+  value="50"
+  class="w-full"
+  id="myRange"
+  oninput="document.body.style.color = `rgb(${this.value * 2.55}, 0, 0)`"
+/>
 <!-- Q1. 
 For this PHP exercise, write a script using the following array:
 $a[0] =2;

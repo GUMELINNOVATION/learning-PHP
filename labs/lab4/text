@@ -1,0 +1,31 @@
+<!-- Q1. A factorial of any given integer, n , is the product of all positive
+  integers between 1 and n inclusive.
+So the factorial of 4 is 1 × 2 × 3 × 4 = 24, and the factorial of 5
+ is 1 × 2 × 3 × 4 × 5 = 120. This
+can be expressed recursively as follows:
+❑ If n == 0, return 1. (This is the base case)
+❑ If n > 0, multiply numbers from n down to 1.
+
+a. Write a  PHP function to display the factorials of the integers up to the
+ given value(argument). Any format could be used for displaying.
+b. Write the recursive version of the same function to display the factorials
+of the integers up to the given value(argument). Any format could be used for displaying. 
+
+Q2. Write a script that uses a recursive function  named “sumEvens” which
+ accepts an integer argument to find the summation of all even numbers between 0 
+ and the argument that is specified. Assume the input is always a positive integer.
+
+Q3. Write a script which uses a  function  named “countCharacters” that accepts an 
+argument as string. This function should count and display the character and the number
+ of appearance for that particular character. Function should count as case insensitive. 
+ count_chars & substr_count predefined functions cannot be used. 
+Hint: Associative arrays will be a good idea.
+
+Example: if my string is “Hello” then the output should be:  H:1
+								  E:1
+								  L:2
+								  O:1
+
+Q4. Write a function to check weather a string is all uppercase or not. Your function
+ should return true or false.
+ -->
