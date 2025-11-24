@@ -1,0 +1,17 @@
+Create an html file named “A.html” where the browser screenshot is below.
+-	For database the options are:WHUM Humanities Index,WGSI General Science,WSSI
+ Social Science,WBAI Biology and Agriculture,WAST Applied Science and Technology,
+ WRGA Reader's Guide Abstracts. With default WHUM Humanities Index
+-	For Full or Brief displays the options are: B,F. With default F
+-	For Word 1,Word2 and Word3 the options(items) are : Subject,Title,Author.  With 
+different default choices
+-	 The button named “Clear” is a reset button  and the button named “Do Search”
+ submits the information to a php page named “B.php”. The screenshot could be found
+  below for B.php;  where the bold text prepared from the input which have been made
+   through the use of “a.html” as a sample run and the standard text (thin faced) 
+   ones are statics.
+
+Q1- Prepare A.html and B.php assuming the form method as post
+Q2- Prepare A.html and B.php assuming the form method as get
+Q3-Prepare such a B.php that works for any particular form method (works both 
+with get and post method hint:request.)

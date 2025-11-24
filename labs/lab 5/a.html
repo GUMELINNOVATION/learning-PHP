@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Labwork 5</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-10 m-10 bg-sky-100 text-xl">
+  <h1 class="text-2xl font-bold mb-4">Question 1</h1>
+  <h2 class="text-lg mb-2">A.html</h2>
+
+  <div class="border p-6 bg-white rounded-lg shadow-md">
+    <form action="B.php" method="get" class="space-y-6">
+      <div>
+        <h3 class="text-2xl font-bold">Infoshare Database Query Page</h3>
+        <p class="text-sm text-gray-600">
+          Search and choose display options below.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <label for="database" class="w-40 font-medium">Database:</label>
+        <select id="Database" name="Database" class="flex-1 border rounded px-3 py-2">
+          <option value="WHUM Humanities Index">WHUM Humanities Index</option>
+          <option value="WGSI General Science">WGSI General Science</option>
+          <option value="WBAI Biology and Agriculture">WBAI Biology and Agriculture</option>
+          <option value="WAST Applied Science and Technology">WAST Applied Science and Technology</option>
+          <option value="WRGA Reader's Guide Abstracts">WRGA Reader's Guide Abstracts</option>
+        </select>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <label for="records" class="w-40 font-medium">Records to view:</label>
+        <input id="records" name="records" type="number" min="1" max="1000" placeholder="e.g. 10"
+          class="flex-1 border rounded px-3 py-2" />
+      </div>
+
+      <div class="flex items-center gap-4">
+        <label for="display" class="w-40 font-medium">Display:</label>
+        <select id="display" name="display" class="flex-1 border rounded px-3 py-2">
+          <option value="full">Full</option>
+          <option value="brief">Brief</option>
+        </select>
+      </div>
+
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <label for="word1" class="w-24 font-medium">Word 1:</label>
+          <input id="word1" name="word1" type="text" placeholder="Enter word 1" class="flex-1 border rounded px-3 py-2" />
+          <select name="word1_options" id="word1_options" class="border rounded px-3 py-2">
+            <option value="author">author</option>
+            <option value="subject">subject</option>
+            <option value="title">title</option>
+          </select>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <label for="word2" class="w-24 font-medium">Word 2:</label>
+          <input id="word2" name="word2" type="text" placeholder="Enter word 2" class="flex-1 border rounded px-3 py-2" />
+          <select name="word2_options" id="word2_options" class="border rounded px-3 py-2">
+            <option value="title">title</option>
+            <option value="author">author</option>
+            <option value="subject">subject</option>
+          </select>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <label for="word3" class="w-24 font-medium">Word 3:</label>
+          <input id="word3" name="word3" type="text" placeholder="Enter word 3" class="flex-1 border rounded px-3 py-2" />
+          <select name="word3_options" id="word3_options" class="border rounded px-3 py-2">
+            <option value="subject">subject</option>
+            <option value="author">author</option>
+            <option value="title">title</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <label class="flex items-center gap-2">
+          <input type="radio" name="operator" value="AND" class="h-4 w-4" /> AND
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="radio" name="operator" value="OR" class="h-4 w-4" /> OR
+        </label>
+      </div>
+
+      <div class="flex gap-4">
+        <button type="reset" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg">
+          Clear
+        </button>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">
+          Do Search
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
