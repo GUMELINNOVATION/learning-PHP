@@ -101,5 +101,42 @@
 </div>
 
 
+<div>
+    <h1>Question 4</h1>
+    <form method="POST">
+        <input type="text" name="string" placeholder="Enter string to encode">
+        <input type="number" name="key" placeholder="Enter key">
+        <button type="submit" name="q4">Submit</button>
+    </form>
+
+    <?php 
+    function encode($s, $k){
+        $s = strtoupper($s);
+        $plain = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $k = $k % 26; 
+        $cipher = substr($plain, $k) . substr($plain, 0, $k);
+
+        $enc = "$s encoded with key $k is: ";
+
+        for($i = 0; $i < strlen($s); $i++){
+            $pos = strpos($plain, $s[$i]);
+            if ($pos !== false)
+                $enc .= $cipher[$pos];
+            else
+                $enc .= $s[$i];
+        }
+
+        return $enc;
+    }
+
+    if (isset($_POST['q4'])) {
+        $string = $_POST['string'];
+        $key = $_POST['key'];
+        echo encode($string, $key);
+    }
+    ?>
+</div>
+
+
 </body>
 </html>
