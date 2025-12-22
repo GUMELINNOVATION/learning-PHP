@@ -1,0 +1,1 @@
+Ýmport qrys.sql from phpmyadmin so your database,user and table will be created automatically.

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        padding: 20px;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #eee;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        margin-bottom: 15px;
+      }
+
+      a {
+        display: block;
+        background-color: #4a6fa5;
+        color: white;
+        text-decoration: none;
+        padding: 15px 20px;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s;
+      }
+
+      a:hover {
+        background-color: #3a5a80;
+      }
+
+      .add {
+        background-color: #2ecc71;
+      }
+
+      .add:hover {
+        background-color: #27ae60;
+      }
+
+      .search {
+        background-color: #3498db;
+      }
+
+      .search:hover {
+        background-color: #2980b9;
+      }
+
+      .display {
+        background-color: #9b59b6;
+      }
+
+      .display:hover {
+        background-color: #8e44ad;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Student Management System</h2>
+
+      <ul>
+        <li><a href="add.php" class="add">Add New Student</a></li>
+        <li><a href="search.php" class="search">Search Student</a></li>
+        <li><a href="display.php" class="display">Display All Students</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
